@@ -58,8 +58,10 @@ export default function App() {
           <div className="word-left">
             {word[0].toUpperCase() + word.substring(1)}
           </div>
+          <div className="word-right">
+            <p className="word-phonetic">{phonetic}</p>
+          </div>
         </div>
-        <p className="word-phonetic">{phonetic}</p>
         {isOpen && (
           <div className="word-con word-meaning" onClick={wordsMeaningHandler}>
             <div className="word-left">{tamilWord}</div>

@@ -34,13 +34,13 @@
   background-color: #8e8ea0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 1rem 0;
 }
 
 .word-phonetic {
   font-size: 0.8rem;
-  color: #b6b6b6;
-  padding-left: 0.5rem;
+  color: #e2e2e2;
 }
 
 .app-btn {
