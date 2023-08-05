@@ -174,7 +174,20 @@ const words = [
   "brought",
   "bought",
   "feign",
-  "procrastination"
+  "procrastination",
+  "nevertheless",
+  "on the other hand",
+  "in contrast",
+  "on the contrary",
+  "however",
+  "whereas",
+  "offensive",
+  "vacate",
+  "anthology",
+  "neglect",
+  "colonization",
+  "stranger",
+  "armor"
 ];
 
 export default words;
