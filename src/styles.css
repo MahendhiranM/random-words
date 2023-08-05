@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
 
 * {
   padding: 0;
   margin: 0;
-  font-family: "Martel Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .app-main {
@@ -17,7 +17,8 @@
 }
 
 .app-title {
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .app-container {
@@ -27,21 +28,19 @@
   border-radius: 5px;
 }
 
-.app-word {
-  margin: 1rem 0;
+.word-con {
+  padding: 0.75rem;
   border-radius: 5px;
   background-color: #8e8ea0;
   display: flex;
   justify-content: space-between;
+  margin: 1rem 0;
 }
 
-.word-left {
-  padding: 0.75rem;
-}
-
-.word-right {
-  border-radius: 5px;
-  padding: 0.75rem 1rem;
+.word-phonetic {
+  font-size: 0.8rem;
+  color: #b6b6b6;
+  padding-left: 0.5rem;
 }
 
 .app-btn {
@@ -54,5 +53,5 @@
   font-family: inherit;
   color: #fff;
   font-size: 1rem;
+  margin-top: 0.75rem;
 }
-
