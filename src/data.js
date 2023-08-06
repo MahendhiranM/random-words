@@ -187,7 +187,15 @@ const words = [
   "neglect",
   "colonization",
   "stranger",
-  "armor"
+  "armor",
+  "borrow",
+  "mighty",
+  "pressure",
+  "expect",
+  "export",
+  "except",
+  "expert",
+  "spellbound",
 ];
 
 export default words;
