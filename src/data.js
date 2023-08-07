@@ -196,6 +196,7 @@ const words = [
   "except",
   "expert",
   "spellbound",
+  "regret"
 ];
 
 export default words;
