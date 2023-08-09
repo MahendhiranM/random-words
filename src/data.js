@@ -196,6 +196,11 @@ const words = [
   "except",
   "expert",
   "spellbound",
+  "regret",
+  "racist",
+  "mortal",
+  "mortality",
+  "immortality",
   "regret"
 ];
 
