@@ -61,11 +61,10 @@ body{
 }
 
 .table{
-  width: 90%;
-  margin: .75rem;
+  width: 100%;
 }
 
-.table th, .table td{
+table, .table th, .table td{
   border: 1px solid #565869;
   border-collapse: collapse;
   text-align: left;
