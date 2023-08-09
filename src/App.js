@@ -58,7 +58,7 @@ export default function App() {
   return (
     <>
       {isTableShow ? (
-        <div className="table" onClick={tableHandler} >
+        <div className="table" onDoubleClick={tableHandler} >
           <table>
             <tr>
               <th>S.No</th>
