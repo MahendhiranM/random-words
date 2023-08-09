@@ -8,6 +8,7 @@ export default function App() {
   const [tamilWord, setTamilWord] = useState("");
   const [phonetic, setPhonetic] = useState("");
   const [isOpen, setIsOpen] = useState(false);
+  const [isTableShow, setIsTableShow] = useState(false);
 
   useEffect(() => {
     const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
@@ -50,29 +51,59 @@ export default function App() {
     setIsOpen(!isOpen);
   };
 
+  const tableHandler = () => {
+    setIsTableShow(!isTableShow);
+  };
+
   return (
-    <div className="app-main">
-      <div className="app-container">
-        <p className="app-title">Random words</p>
-        <div className="word-con word" onClick={wordsMeaningHandler}>
-          <div className="word-left">
-            {word[0].toUpperCase() + word.substring(1)}
-          </div>
-          <div className="word-right">
-            <p className="word-phonetic">{phonetic}</p>
+    <>
+      {isTableShow ? (
+        <div className="table" onClick={tableHandler} >
+          <table>
+            <tr>
+              <th>S.No</th>
+              <th>Word</th>
+            </tr>
+            {words.map((wrd, i) => (
+              <tr>
+                <td>{i}</td>
+                <td>{wrd}</td>
+              </tr>
+            ))}
+          </table>
+        </div>
+      ) : (
+        <div className="app-main">
+          <div className="app-container">
+            <p className="app-title">Random words</p>
+            <div className="word-con word" onClick={wordsMeaningHandler}>
+              <div className="word-left">
+                {word[0].toUpperCase() + word.substring(1)}
+              </div>
+              <div className="word-right">
+                <p className="word-phonetic">{phonetic}</p>
+              </div>
+            </div>
+            {isOpen && (
+              <div
+                className="word-con word-meaning"
+                onClick={wordsMeaningHandler}
+              >
+                <div className="word-left">{tamilWord}</div>
+              </div>
+            )}
+            <div className="app-btn-grb">
+              <button
+                className="app-btn"
+                onClick={randonWordsHandler}
+                onDoubleClick={tableHandler}
+              >
+                Next
+              </button>
+            </div>
           </div>
         </div>
-        {isOpen && (
-          <div className="word-con word-meaning" onClick={wordsMeaningHandler}>
-            <div className="word-left">{tamilWord}</div>
-          </div>
-        )}
-        <div className="app-btn-grb">
-          <button className="app-btn" onClick={randonWordsHandler}>
-            Next
-          </button>
-        </div>
-      </div>
-    </div>
+      )}
+    </>
   );
 }
