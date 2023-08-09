@@ -63,10 +63,11 @@ body{
 .table{
   width: 90%;
   margin: .75rem;
-  border-collapse: collapse;
 }
 
 .table th, .table td{
   border: 1px solid #565869;
+  border-collapse: collapse;
   text-align: left;
+  padding: .25rem .75rem;
 }
