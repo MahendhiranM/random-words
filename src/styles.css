@@ -60,7 +60,11 @@ body{
   margin-top: 0.75rem;
 }
 
-.table{
+.table-con{
+  padding: .75rem;
+}
+
+table{
   width: 100%;
 }
 
