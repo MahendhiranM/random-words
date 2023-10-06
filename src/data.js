@@ -201,7 +201,29 @@ const words = [
   "mortal",
   "mortality",
   "immortality",
-  "regret"
+  "regret", 
+  "exhibition",
+  "postmortem",
+  "consent",
+  "concurrent",
+  "betrayed",
+  "portrayal",
+  "truncate",
+  "guilt",
+  "trench",
+  "felt",
+  "federal",
+  "propose",
+  "absolutely",
+  "obviously",
+  "eventually",
+  "colloquial",
+  "probation",
+  "dens",
+  "hereditary",
+  "sustain",
+  "witch",
+  "wood"
 ];
 
 export default words;
